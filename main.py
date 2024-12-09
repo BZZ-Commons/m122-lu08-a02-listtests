@@ -1,12 +1,28 @@
-def calculate():
+import tkinter
+from tkinter import filedialog
+
+
+def main():
     """
-    calculates the total
+    Main function
     :return: None
     """
-    price = 14.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
+    project = select_project()
+    if project == '':
+        print('No project selected')
+        return
+
+def select_project():
+    """
+    Asks the user to select the project folder
+    :return: path to the project folder
+    """
+    root = tkinter.Tk()
+    root.withdraw()
+
+    project_folder = filedialog.askdirectory()
+    return project_folder
 
 
 if __name__ == '__main__':
-    calculate()
+    main()
