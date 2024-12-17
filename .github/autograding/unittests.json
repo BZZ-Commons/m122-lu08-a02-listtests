@@ -1,7 +1,22 @@
 [
   {
-    "name": "test",
-    "function": "test",
+    "name": "test_find_test_modules",
+    "function": "test_find_test_modules",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_find_test_functions",
+    "function": "test_find_test_functions",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_sanitize_function_name",
+    "function": "test_sanitize_function_name",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_output_json",
+    "function": "test_output_json",
     "timeout": 10,
     "points": 1
   }
